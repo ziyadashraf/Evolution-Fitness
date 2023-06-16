@@ -1,0 +1,168 @@
+@font-face {
+
+    src: url('./fonts/NORTHEN.ttf');
+    font-family: northen;
+
+}
+
+
+body {
+    margin: 0;
+    width: 100vw;
+
+    color: #2C3131;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+
+#status {
+    /* background-color: aquamarine; */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#success-know,
+#pending-know,
+#created-at-know,
+#cents-know {
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70vh;
+    width: 70vh;
+}
+
+.details-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table {
+    /* font-family: arial, sans-serif; */
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 12px;
+}
+
+tr:nth-child(even) {
+    background-color: #86c03e96;
+}
+
+#info {
+    text-align: center;
+    font-size: 15px;
+}
+
+
+.title h2 {
+    margin-bottom: 0;
+}
+
+.title p {
+    margin-top: 5px;
+    margin-bottom: 30px;
+
+    font-size: smaller;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 500px) {
+    table {
+        font-size: smaller;
+        /* width: 80%; */
+
+    }
+
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 6px;
+    }
+
+    .title p {
+        margin-top: 5px;
+        margin-bottom: 30px;
+
+        font-size: x-small;
+    }
+
+
+    #info {
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 390px) {
+    table {
+        font-size: smaller;
+
+
+    }
+
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 6px;
+    }
+
+    #info {
+        text-align: center;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 355px) {
+    table {
+        font-size: x-small;
+
+
+    }
+
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 6px;
+    }
+
+    .title p {
+        margin-top: 5px;
+        margin-bottom: 30px;
+
+        font-size: xx-small;
+    }
+
+
+
+}
+
+.logo-holder img {
+    height: 10vh;
+}
